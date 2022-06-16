@@ -57,12 +57,14 @@ body  {
   align-items: center;
 } 
 
-.input-area  {
+.input  {
   display: inline-block;
   border: 5px solid #fff;
   width: 200px;
   height: 100px;
+  background-color: rgb(32, 32, 32);
   color: #fff;
+  font-size: 25px;
 }
 
 .score, .highScore  {
@@ -108,7 +110,7 @@ body  {
     display: block;
   }
   
-  .input-area  {
+  .input  {
     border: 3px solid #fff;
     width: 100px;
     height: 50px;
