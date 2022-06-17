@@ -31,35 +31,44 @@ body  {
   color: #000;
 }
 
-.mid-section  {
-  text-align: center;
-  margin-bottom: 100px;
+.btn:hover  {
+    background-color: rgb(204, 200, 200);
 }
 
+
 .heading {
+  text-align: center;
   font-size: 50px;
   margin-bottom: 30px;
 }
 
 .guess-container  {
-  display: flex;
-  align-items: center;
+  position: relative;
+  height: 150px;
+  margin-bottom: 100px;
 }
 
 .line {
-  width: 1000px;
+  width: 100%;
   height: 10px;
-}
-
-.guess, .line  {
-  display: inline-block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
   background-color: #fff;
 }
 
+
 .guess {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 200px;  
+  padding: 30px 0px;  
   font-size: 70px;
-  padding: 10px 50px;
+  text-align: center;
   color: #000;
+  background-color: #fff;
 }
 
 .con2 {
@@ -79,9 +88,10 @@ body  {
   border: 5px solid #fff;
   width: 200px;
   height: 100px;
+  text-align: center;
   background-color: var(--main-background-color);
   color: #fff;
-  font-size: 25px;
+  font-size: 70px;
 }
 
 .score, .highScore  {
@@ -110,6 +120,7 @@ body  {
 
 
 @media screen and (max-width: 600px) {
+
   .main-container, .btn {
     font-size: 20px;
     text-align: center;
@@ -119,8 +130,18 @@ body  {
     margin-bottom: 20px;
   }
 
+  .guess-container  {
+  height: 100px;
+  margin-bottom: 50px;
+  }
+
   .heading, .guess  {
     font-size: 30px;
+  }
+
+  .guess  {
+    width: 100px;  
+    padding: 10px 0px;  
   }
 
   .con1  {
@@ -131,6 +152,7 @@ body  {
     border: 3px solid #fff;
     width: 100px;
     height: 50px;
+    font-size: 30px;
   }
 
   .con2 {
@@ -141,4 +163,5 @@ body  {
   .line {
     height: 5px;
   }
+
 }

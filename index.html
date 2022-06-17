@@ -7,7 +7,8 @@
   <title>GUESS MY NUMBER GAME</title>
   <link rel="stylesheet" href="stylesheet.css">
   <link rel="stylesheet" href="reset.css">
-  <script src="scripts.js"></script>
+  <!-- <script src="scripts.js"></script>
+  can not do DOM manipulation beacuse the script is loaded before the part i want to manipulate -->
 </head>
 <body>
   <div class="main-container">
@@ -31,9 +32,9 @@
         <div class="guess">
           ?
         </div>
-        <div class="line">
+        <!-- <div class="line">
 
-        </div>
+        </div> -->
       </div>  
 
     </div> 
@@ -59,7 +60,7 @@
         </button>
       </div>
       <div class="right-display">
-        <p class="guess-prompt" id="guess-prompt">
+        <p class="guess-prompt">
           Start guessing...
         </p>
         <div class="scoreBox">
@@ -93,6 +94,8 @@
     </div>
 
   </div>
+
 </body>
+<script src="scripts.js"></script>
 </html>
 
