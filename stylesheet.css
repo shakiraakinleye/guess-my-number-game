@@ -1,5 +1,9 @@
+:root {
+  --main-background-color: rgb(32, 32, 32);
+}
+
 body  {
-  background-color: rgb(32, 32, 32);
+  background-color: var(--main-background-color);
 }
 
 .main-container  {
@@ -37,11 +41,24 @@ body  {
   margin-bottom: 30px;
 }
 
-.qst  {
+.guess-container  {
+  display: flex;
+  align-items: center;
+}
+
+.line {
+  width: 1000px;
+  height: 10px;
+}
+
+.guess, .line  {
   display: inline-block;
-  font-size: 70px;
-  padding: 5px 30px;
   background-color: #fff;
+}
+
+.guess {
+  font-size: 70px;
+  padding: 10px 50px;
   color: #000;
 }
 
@@ -62,7 +79,7 @@ body  {
   border: 5px solid #fff;
   width: 200px;
   height: 100px;
-  background-color: rgb(32, 32, 32);
+  background-color: var(--main-background-color);
   color: #fff;
   font-size: 25px;
 }
@@ -102,7 +119,7 @@ body  {
     margin-bottom: 20px;
   }
 
-  .heading, .qst  {
+  .heading, .guess  {
     font-size: 30px;
   }
 
@@ -121,4 +138,7 @@ body  {
     height: 150px
   }
   
+  .line {
+    height: 5px;
+  }
 }

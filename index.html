@@ -24,21 +24,42 @@
         Guess My Number!
       </h1>
 
-      <div class="qst">
-        ?
-      </div>
+      <div class="guess-container">
+        <div class="line">
+
+        </div>
+        <div class="guess">
+          ?
+        </div>
+        <div class="line">
+
+        </div>
+      </div>  
+
     </div> 
     <div class="sub-container con2">
     
       <div class="left-display">
         <input class="input" type="integer" min="1" max="20">
         <!-- Did this to create a range of 1 - 20. This is wrong though, because the user can still enter numbers outside the range. Now going to try it with a select input -->
+        <!-- <div class="input"> -->
+          <!-- <select name="input" id="input">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+          </select> -->
+          <!-- select didnt work either -->
+        <!-- </div> -->
         <button class="check btn">
           Check!
         </button>
       </div>
       <div class="right-display">
-        <p>
+        <p class="guess-prompt" id="guess-prompt">
           Start guessing...
         </p>
         <div class="scoreBox">
